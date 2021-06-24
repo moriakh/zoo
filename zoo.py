@@ -50,26 +50,26 @@ class Zoo:
         self.add_animal()
         self.random_attribute = input(f"Insert {name}'s jumps: ")
         self.random_attribute = float(self.random_attribute)
-        self.animals.append(Frog(name, 'Amphibia', self.regular_food, self.max_qty_food, self.gender, self.random_attribute))
+        self.animals.append(Frog(name, self.animal_class, self.regular_food, self.max_qty_food, self.gender, self.random_attribute))
 
     def add_tiger(self, name):
         self.add_animal()
         self.random_attribute = input(f"Insert {name}'s bites: ")
         self.random_attribute = float(self.random_attribute)
-        self.animals.append(Tiger(name, 'Mammals', self.regular_food, self.max_qty_food, self.gender, self.random_attribute))
+        self.animals.append(Tiger(name, self.animal_class, self.regular_food, self.max_qty_food, self.gender, self.random_attribute))
 
     def add_bear(self, name):
         self.add_animal()
         self.random_attribute = input(f"Insert {name}'s roars: ")
         self.random_attribute = float(self.random_attribute)
-        self.animals.append(Bear(name, 'Mammals', self.regular_food, self.max_qty_food, self.gender, self.random_attribute))
+        self.animals.append(Bear(name, self.animal_class, self.regular_food, self.max_qty_food, self.gender, self.random_attribute))
 
 
     def add_peacock(self, name):
         self.add_animal()
         self.random_attribute = input(f"Insert {name}'s flies: ")
         self.random_attribute = float(self.random_attribute)
-        self.animals.append(Peacock(name, 'Birds', self.regular_food, self.max_qty_food, self.gender, self.random_attribute))
+        self.animals.append(Peacock(name, self.animal_class, self.regular_food, self.max_qty_food, self.gender, self.random_attribute))
     
     def print_all_info(self):
         print("-"*30, self.name, "-"*30)
